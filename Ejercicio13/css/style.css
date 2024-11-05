@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.columna {
+   /* margin:auto; */
+    height: 440px;
+    width: 250px;
+    padding:10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.contenedor {
+    
+    background-image: url("/images/bg-2.jpg");
+    height: 571px;
+    width: 750px;
+    
+}

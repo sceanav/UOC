@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+/* anidación: un div que tenga un elemento dentro que sea capa 1 */
+
+div .capa1 {
+    background-color: blue;
+}
+
+
+/* sin anidación*: un div que sea capa 1 */
+
+div.capa1 {
+    background-color: orange;
+}
+
+
+ul.menu {
+    display: inline-block;
+}
+
+ul .menuresaltado {
+    background-color: red;
+    /* aquel contenido de la lista que tenga la clase menú resaltado */
+}
+
+li.menuresaltado {
+    color: azure;
+    /* la linea que sea de clase menuresaltado */
+}
