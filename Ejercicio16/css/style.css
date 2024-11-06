@@ -14,3 +14,7 @@
     width: 33.33%;
     height: 100vh;
  }
+
+ .texto{
+    text-align: justify;
+ }
