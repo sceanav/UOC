@@ -1,14 +1,16 @@
-.contenedor{
+.contenedor {
     background-image: url(/images/panteon.jpg);
     width: 722px;
     height: 480px;
     display: flex;
     justify-content: center;
+    gap: 85px;
 }
 
 .cajaTexto {
     width: 50px;
-    margin: 45px;  
+    /*margin: 45px; podría usarlo en vez del gap */
+
     height: 180px;
     overflow: auto;
     margin-top: 200px;
