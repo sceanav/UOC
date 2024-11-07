@@ -4,7 +4,8 @@
     height: 480px;
     display: flex;
     justify-content: center;
-    gap: 85px;
+    /* align-items: center; */
+    gap: 90px;
 }
 
 .cajaTexto {
