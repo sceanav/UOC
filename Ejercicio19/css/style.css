@@ -1,0 +1,16 @@
+.contenedor{
+    background-image: url(/images/panteon.jpg);
+    width: 722px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+}
+
+.cajaTexto {
+    width: 50px;
+    margin: 45px;  
+    height: 180px;
+    overflow: auto;
+    margin-top: 200px;
+
+}
