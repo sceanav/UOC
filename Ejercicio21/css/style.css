@@ -1,0 +1,9 @@
+@font-face {
+    font-family: mifuente;
+    src: url(/fonts/fuente.ttf);
+}
+
+p {
+    font-family: mifuente;
+    font-size: 3rem;
+}

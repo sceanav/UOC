@@ -1,0 +1,53 @@
+.cabecera {
+    margin: 0px;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    background-color: grey;
+    color: white;
+    border: 2px red solid;
+    border-style: dashed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    margin: auto;
+    color: white;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+
+}
+
+h3 {
+    margin: Auto;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.columna {
+
+    width: 200px;
+    padding: 20px;
+}
+
+p:first-of-type {
+    background-color: darkgray;
+}
+
+p {
+    margin: 0px;
+    padding: 0px
+}
