@@ -112,7 +112,7 @@ footer {
     background-image: url(/img/pablomonteserin_small.png);
   }
 
-  nav a {
+  nav {
     border-bottom: 1px solid grey;
     display: flex;
     flex-direction: column;
