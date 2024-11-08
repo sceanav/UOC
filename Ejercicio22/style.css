@@ -1,122 +1,187 @@
 body {
-  background: url(img/background.png);
-  margin: 0;
-  font-family: arial;
-}
-
-#wrapper {
-  max-width: 980px;
-  margin: 0px auto 0px auto;
-  background: rgba(186, 183, 179, 0.2);
-  position: relative;
-}
-
-header {
-  height: 275px;
-  background: url("img/pablomonteserin.png") no-repeat;
-  background-position: center;
-  position: relative;
-}
-
-header a.logo {
-  background: url("img/logo.png") no-repeat;
-  position: absolute;
-  right: 10px;
-  top: 150px;
-  width: 150px;
-  height: 118px;
-  display: block;
-}
-
-nav {
-  background: #333;
-  margin: 0;
-  padding: 1px;
-  text-align: center;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  padding: 20px 0;
-  color: black;
-  display: inline-block;
-  text-decoration: none;
-  width: 100px;
-  transition: 1s;
-  color: white;
-}
-
-nav a:hover {
-  background: grey;
-  color: white;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-article {
-  text-align: center;
-  width: 80%;
-  margin: auto;
-}
-
-article p {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.promo_container {
-  width: 95%;
-  margin: auto;
-  text-align: center;
-}
-
-.promo {
-  width: 33%;
-  display: inline-block;
-  padding-left: 10px;
-  box-sizing: border-box;
-}
-
-.promo div {
-  vertical-align: top;
-  display: inline-block;
-}
-
-.img_logo {
-  margin-top: 18.72px;
-  width: 35%;
-  height: 79px;
- 
-  background: url(img/logo_medium.png) no-repeat;
-}
-
-.content {
-  width: 65%;
-  text-align: left;
-}
-
-footer {
-  background: black;
-  color: white;
-}
-
-@media (max_width: 780px) {
-    header {
-        height: 275px;
-        background: url("img/pablomonteserin_small.png") no-repeat;
-        background-position: center;
-        position: relative;
-      }
- 
-  ul {
-    display: flex;
-    flex-direction: column;
+    background: url(/img/background.png);
+    margin: 0;
+    font-family: arial;
   }
-}
+  
+  #wrapper {
+    max-width: 980px;
+    margin: 0px auto 0px auto;
+    background: rgba(186, 183, 179, 0.2);
+    position: relative;
+  }
+  
+  header {
+    height: 275px;
+    background: url("/img/pablomonteserin.png") no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  
+  header a.logo {
+    background: url("/img/logo.png") no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 150px;
+    width: 150px;
+    height: 118px;
+    display: block;
+  }
+  
+  nav {
+    background: #333;
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav a {
+    padding: 20px 0;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    width: 100px;
+    transition: 1s;
+    color: white;
+  }
+  
+  nav a:hover {
+    background: grey;
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  article {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  
+  article p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .promo_container {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .promo {
+    width: 33%;
+    display: inline-block;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  
+  .promo div {
+    vertical-align: top;
+    display: inline-block;
+  }
+  
+  .img_logo {
+    margin-top: 18.72px;
+    width: 35%;
+    height: 79px;
+    background: red;
+    background: url(/img/logo_medium.png) no-repeat;
+  }
+  
+  .content {
+    width: 65%;
+    text-align: left;
+  }
+  
+  footer {
+    background: black;
+    color: white;
+  }
+  
+ /* @media (max-width: 1024px) {
+    header {
+      height: 200px;
+      background: url("/img/pablomonteserin_medium.png") center 0 no-repeat;
+    }
+  
+    header a.logo {
+      top: 115px;
+      background: url("/img/logo_medium.png");
+      width: 100px;
+      height: 79px;
+    } 
+  
+    #wrapper {
+      height: auto;
+    }
+  } */
+  
+  @media (max-width: 700px) {
+    header {
+      height: 75px;
+      background: url("/img/pablomonteserin_small.png") center 0 no-repeat;
+    }
+  
+    header a.logo {
+      top: 40px;
+      background: url("/img/logo_small.png");
+      width: 40px;
+      height: 32px;
+    }
+  
+    nav a {
+      border-bottom: 1px solid grey;
+      display: block;
+      width: 80%;
+      padding: 10px;
+      margin: 0 auto;
+    }
+  
+    nav li {
+      display: block;
+      text-align: center;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    nav li {
+      padding: 0;
+      margin: 0;
+    }
+  
+    nav {
+      display: block;
+      padding: 0;
+    }
+  
+    .img_logo {
+      background: url(/img/logo_medium.png) no-repeat;
+    }
+  
+    .promo {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid grey;
+    }
+  
+    article {
+      width: 95%;
+      border-bottom: 1px solid grey;
+    }
+  
+    #wrapper {
+      height: auto;
+    }
+  }
