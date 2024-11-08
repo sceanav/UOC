@@ -140,15 +140,15 @@ body {
   
     nav a {
       border-bottom: 1px solid grey;
-      display: block;
       width: 80%;
-      padding: 10px;
+      height: 8px;
       margin: 0 auto;
     }
   
     nav li {
-      display: block;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   
     nav ul {
@@ -161,23 +161,21 @@ body {
       margin: 0;
     }
   
-    nav {
-      display: block;
-      padding: 0;
-    }
-  
+   
     .img_logo {
       background: url(/img/logo_medium.png) no-repeat;
     }
   
     .promo {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
       width: 100%;
       border-bottom: 1px solid grey;
     }
   
     article {
-      width: 95%;
+      min-width: 150px;
       border-bottom: 1px solid grey;
     }
   
