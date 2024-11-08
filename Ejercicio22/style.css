@@ -93,7 +93,7 @@ article p {
   margin-top: 18.72px;
   width: 35%;
   height: 79px;
-  background: red;
+ 
   background: url(img/logo_medium.png) no-repeat;
 }
 
@@ -108,18 +108,14 @@ footer {
 }
 
 @media (max_width: 780px) {
-  body {
-    background-image: url(/img/pablomonteserin_small.png);
-  }
-
-  nav {
-    border-bottom: 1px solid grey;
-    display: flex;
-    flex-direction: column;
-    height:auto;
-  }
-
-  .promo_container {
+    header {
+        height: 275px;
+        background: url("img/pablomonteserin_small.png") no-repeat;
+        background-position: center;
+        position: relative;
+      }
+ 
+  ul {
     display: flex;
     flex-direction: column;
   }
