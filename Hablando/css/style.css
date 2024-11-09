@@ -1,0 +1,34 @@
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0px;
+  height: 20vh;
+  padding: 10px;
+}
+
+.menu {
+  margin: 0px;
+  border-right: 1px solid black;
+
+  height: 80vh;
+}
+
+ul {
+  margin-top: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+li {
+  text-align: center;
+}
+
+main {
+  margin: 20px;
+  width: 800px;
+}
