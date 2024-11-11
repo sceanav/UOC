@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  border: 0;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(3, 79, 80);
+  color: turquoise;
+  height: 100px;
+}
+
+.menu {
+  padding-top: 40px;
+}
+
+.menu ul {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.menu ul li a {
+  padding: 43px;
+  color: turquoise;
+}
+
+.menu ul li a:hover {
+  background-color: turquoise;
+  color: rgb(3, 79, 80);
+}
+
+.menu ul li a {
+  text-decoration: none;
+}
+
+.titulo {
+  height: 250px;
+  width: 100%;
+  background-color: rgb(23, 39, 39);
+}
+
+h1 {
+  color: white;
+  margin: auto;
+  font-size: 3rem;
+  text-align: center;
+  padding: 60px 0 30px 0;
+}
+
+h2 {
+  color: white;
+  margin: auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.fondoFoto {
+  height: 400px;
+  width: 100%;
+  background-image: url(/img/pic01.jpg);
+}
+
+.grisClaro {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.izquierda {
+  width: 60vw;
+}
+
+h3 {
+  padding-bottom: 15px;
+  font-size: 2rem;
+}
+
+h4 {
+  margin: 40px 0px 20px 0px;
+}
+
+p {
+  margin: 20px 40px 40px 0px;
+}
+
+.enlaces {
+  padding: 40px;
+  width: 40vw;
+  margin: auto;
+}
+
+.enlaces a {
+  padding-bottom: 10px;
+}
+
+footer {
+  height: 400px;
+  width: 100%;
+  background-color: rgb(3, 79, 80);
+}
