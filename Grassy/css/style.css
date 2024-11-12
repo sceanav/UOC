@@ -1,6 +1,6 @@
 @font-face {
   font-family: "MiFuente";
-  src: url("/fonts/fuente.woff");
+  src: url("fonts/fuente.woff");
 }
 
 * {
@@ -10,7 +10,6 @@
 
 header {
   width: 100%;
-
   color: turquoise;
 }
 
@@ -19,7 +18,7 @@ header {
 .menu {
   text-align: center;
   background-color: rgb(3, 79, 80);
-  height: 120px;
+  height: 118px;
 }
 
 .menu li {
@@ -52,7 +51,7 @@ h1 {
   font-family: MiFuente;
   font-size: 3rem;
   text-align: center;
-  padding: 85px 0 30px 0;
+  padding: 88px 0 30px 0;
 }
 
 h2 {
@@ -66,7 +65,7 @@ h2 {
 .fondoFoto {
   height: 450px;
   width: 100%;
-  background-image: url(/img/pic01.jpg);
+  background-image: url("../img/pic01.jpg");
 }
 
 .grisClaro {
