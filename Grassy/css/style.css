@@ -1,6 +1,6 @@
 @font-face {
   font-family: "MiFuente";
-  src: url("fonts/fuente.woff");
+  src: url("/fonts/fuente.woff");
 }
 
 * {
@@ -17,8 +17,11 @@ header {
 
 .menu {
   text-align: center;
-  background-color: rgb(3, 79, 80);
-  height: 118px;
+  background-color: rgb(3, 79, 80, 0.5);
+  height: 140px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
 
 .menu li {
@@ -27,7 +30,8 @@ header {
 }
 
 .menu a {
-  padding: 50px 70px 50px 70px;
+  margin: 0px;
+  padding: 80px 70px 62px 70px;
   color: white;
   font-family: MiFuente;
   text-decoration: none;
@@ -36,11 +40,12 @@ header {
 
 .menu a:hover {
   background-color: turquoise;
-  color: rgb(3, 79, 80);
+  color: rgba(3, 79, 80, 0.5);
 }
 
 .titulo {
   height: 300px;
+  padding-top: 180px;
   width: 100%;
   background-color: rgb(23, 39, 39);
 }
@@ -51,6 +56,7 @@ h1 {
   font-family: MiFuente;
   font-size: 3rem;
   text-align: center;
+
   padding: 88px 0 30px 0;
 }
 
@@ -101,13 +107,14 @@ p {
   margin-left: 40px;
 }
 
-.enlaces li {
+li {
   list-style: none;
 }
 
-.enlaces a {
-  padding: 20px 10px 20px 10px;
-  line-height: 4rem;
+/*.enlaces*/
+a {
+  /* padding: 20px 10px 20px 10px;*/
+  line-height: 2.5rem;
 }
 
 .enlaces a:hover {
@@ -117,12 +124,54 @@ p {
 
 .tresColumnas {
   width: 100%;
-  height: 350px;
+  height: 450px;
   background-color: rgb(23, 39, 39);
+  display: flex;
+  justify-content: center;
+}
+
+.tresColumnas a {
+  color: lightgrey;
+}
+
+h5 {
+  font-family: MiFuente;
+  font-size: 1.7rem;
+  color: white;
+  padding: 40px;
+}
+
+.colIzq {
+  width: 33.33%;
+}
+
+.colCent {
+  width: 33.33%;
+}
+
+.colDer {
+  width: 33.33%;
+}
+
+.colDer p {
+  margin: 0px 50px 0px 40px;
+  color: white;
+  font-family: MiFuente;
+  font-weight: bold;
+  line-height: 1.5rem;
 }
 
 footer {
   height: 50px;
   width: 100%;
   background-color: rgb(3, 79, 80);
+  display: flex;
+}
+
+.logos {
+  margin: 20px 60px 20px 60px;
+}
+
+.logos img {
+  margin: 15px;
 }
