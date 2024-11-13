@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.contenedor0 {
+  display: flex;
+  justify-content: center;
+}
+
+.imagenCentro {
+  margin: 20px;
+  width: 420px;
+  height: 250px;
+}
+
+.contenedor1 {
+  display: flex;
+  justify-content: center;
+}
+
+.lista {
+  padding-left: 80px;
+  width: 500px;
+}
+
+.texto {
+  margin-right: 200px;
+  padding: 10px 100px 40px 40px;
+}
+
+.contenedor2 {
+  padding: 0 100px 0 100px;
+  display: flex;
+  justify-content: center;
+}
