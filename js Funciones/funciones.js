@@ -106,10 +106,11 @@ hoyQuieroComer("pizza");
 verdadero(true);
 console.log (calcularVelocidad(100));
 console.log (calcularArea(10, 20)); */
-    
+   
 
 /* FUNCIONES FLECHA */
 
+/*
 const cubo = n => n*n*n;
 console.log(cubo(3));
 
@@ -128,7 +129,7 @@ console.log(calculatePerimeter(5));
 const calculateArea = radius => Math.PI * radius * radius;
 console.log(calculateArea(5));  
 
-/* FUNCIONES DE CADENA */
+/* FUNCIONES DE CADENA 
 
 const logintud = nombre => nombre.length;
 console.log(logintud("pepe"));
@@ -195,8 +196,69 @@ const generarNombre = (a,b,c) => {
         return "Error";
     }
     else {
-        return a[0]+a[1]+b[0]+b[1]+c[0]+c[1];
+        return a.substring(0,2)+b.substring(0,2)+c.substring(0,2);
     }   
 }
 
 console.log(generarNombre("Peppee", "Papito", "Concha"));
+
+const generarNombre2 = (a,b,c) => {
+    if (a.length <5 || b.length <5 || c.length <5) {
+        return "Error";
+    }
+    else {
+        return a[a.length-1]+b[b.length-1]+c[c.length-1];
+    }   
+}
+
+console.log(generarNombre2("Peppee", "Papito", "Concha"));
+
+const generarNombre3    = (a,b,c) => {
+    if (a.length <5 || b.length <5 || c.length <5) {
+        return "Error";
+    }
+    else {
+        return a.substring(a.length - 3) + b.substring(b.length - 3) + c.substring(c.length - 3);
+    }   /* Puedo hacerlo también con slice, que acepta valores negativos 
+}
+
+console.log(generarNombre3("Peppes", "Papito", "Concha"));
+
+const tieneLetra = (cadena, letra) => {
+    let i = 0;
+    cadena = cadena.toLowerCase();
+    letra = letra.toLowerCase();
+    while (i<cadena.length && cadena[i] != letra) {
+        i++;
+    }
+    if (i<cadena.length) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+console.log(tieneLetra("Contiene la letra p", "c"));  
+
+const nuevaPalabra = (letra, num) => {
+   return letra.repeat(num);
+};
+    
+console.log(nuevaPalabra("a", 5)); */
+
+const aleatorio = () => Math.floor(Math.random()*3+5);
+console.log(aleatorio());
+
+/* Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
+nombre.charAt();
+nombre.length; */
+
+const nombre="Santi";
+const letrasAleatorias = (nom) => nom.charAt(Math.floor(Math.random()*nom.length));
+
+let micadena="";
+for(let i=0;i<50;i++){
+   micadena=micadena+nombre.charAt(letrasAleatorias (nombre));
+}
+console.log(micadena);
