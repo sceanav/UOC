@@ -1,6 +1,6 @@
 
-let dni=""
 const letrasPosibles = "TRWAGMYFPDXBNJZSQVHLCKE";
+let dni="";
 
 do
 {
