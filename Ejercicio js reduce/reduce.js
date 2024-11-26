@@ -30,8 +30,7 @@ const users = [
 		"edad":7
 	},
 ];
-/* const choosedUser = users.find((person) => person.name==="Juan"); */
-const activeUsers = users.filter((person) => person.isActive===true);
-console.log(activeUsers);
-const adultUsers = users.filter((person) => person.edad>=18);   
-console.log(adultUsers);
+
+const mediaEdad = users.reduce((acumulado, person) => acumulado + person.edad / users.length, 0);
+// el 0 inicializa el acumulador a 0 -> Es obligatorio cuanto se trabaja con objetos dentro del reduce
+console.log(mediaEdad);

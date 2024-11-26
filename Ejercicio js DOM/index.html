@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ejercicio 1-->
+    <label for="euros">Euros: </label>
+    <input type="text" id="euros" placeholder="0"></input>
+     
+    <button type="button" id="btn1">Convertir</button>
+    <br>
+    <p>Dolares: </p>
+    <output id="dolares">
+
+    </output>
+
+    <!-- Ejercicio 2-->
+    <br><br>
+    <label for="centig">Grados centígrados: </label>
+    <input type="text" id="centig" class="centigrades" placeholder="0"></input>
+    <button type="button" id="btn2">Convertir</button>
+    <br>
+    <p>Grados fahrenheit:</p>
+    <output id="far" class="salida2">
+
+    </output>
+
+    <!-- Ejercicio 3-->
+    <br><br>
+    <label for="nameUser">Nombre: </label>
+    <input type="text" id="nameUser"></input>
+    <br>
+    <br>
+    <label for="tipoMaterial"></label>
+    <select name="Material" id="tipoMaterial">
+        <option value="plastico">Plástico</option>
+        <option value="metal">Metálico</option>
+        <option value="maderas">Madera</option>
+    </select>
+    <br>
+    <p>Dimensiones de la caja </p>
+    <p>
+	    Diminuta: <input type="radio" name="dimensions" value="Diminuta" /><br />
+	    Pequeña: <input type="radio" name="dimensions" value="Pequeña" /><br />
+	    Normal: <input type="radio" name="dimensions" value="Normal" /><br />
+    </p>
+    <br>
+    <p>Comentarios: </p>
+    <textarea id="comentarios" rows="5" cols="50"></textarea><br><br>
+    <button type="button" id="btn3">Enviar</button>
+    <output id="envioPreparado"></output>
+    <script src="dom.js"></script>
+</body>
+</html>
