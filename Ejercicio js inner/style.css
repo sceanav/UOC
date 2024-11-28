@@ -1,0 +1,12 @@
+.redBox {height: 150px;
+width: 150px;
+border: solid 1px black;
+background-color: red;
+}
+
+.yellowBox {
+    height: 150px;
+    width: 150px;
+    border: solid 1dvb black;
+    background-color: yellow;
+}

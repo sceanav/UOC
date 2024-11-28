@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dni</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Introduce tu DNI</h2>
-    <label for="dni">Número de DNI:</label><input type="number" name="dni" id="dni" placeholder="Introduce tu DNI">
-    <br><br>
-    <button type="button" id="btn1">Mostrar letra</button>
-    <h2>La letra de tu DNI es</h2>
-    <output id="letra"></output>
+    <div class="centro">
+        <h2>Introduce tu DNI</h2>
+        <div class="caja"><label for="dni">Número de DNI:</label></div>
+        <input type="number" name="dni" id="dni" placeholder="Introduce tu DNI">
+        <br><br>
+        <button type="button" id="btn1">Mostrar letra</button>
+        <h2>La letra de tu DNI es</h2>
+        <output id="letra"></output>
+  
+    </div>
     <script src="dnifunctions.js"></script>
 </body>
 </html>
