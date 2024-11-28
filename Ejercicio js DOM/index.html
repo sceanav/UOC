@@ -36,16 +36,21 @@
     <br>
     <label for="tipoMaterial"></label>
     <select name="Material" id="tipoMaterial">
-        <option value="plastico">Plástico</option>
-        <option value="metal">Metálico</option>
-        <option value="maderas">Madera</option>
+        <option value="plástico">
+            <label>Plástico</label>
+        </option>
+        <option value="metal">
+            <label>Metal</label>
+        </option>
+        <option value="maderas">
+            <label>Madera</label>
+        </option>
     </select>
     <br>
     <p>Dimensiones de la caja </p>
-    <p>
-	    Diminuta: <input type="radio" name="dimensions" value="Diminuta" /><br />
-	    Pequeña: <input type="radio" name="dimensions" value="Pequeña" /><br />
-	    Normal: <input type="radio" name="dimensions" value="Normal" /><br />
+     <input type="radio" id="tiny" name="dimensions" value="diminuta" checked/><label for="tiny">Diminuta</label><br />
+	 <input type="radio" id="small" name="dimensions" value="pequeña" /><label for="small">Pequeña</label><br />
+	 <input type="radio" id="normal" name="dimensions" value="normal" /><label for="normal">Normal  </label><br />
     </p>
     <br>
     <p>Comentarios: </p>

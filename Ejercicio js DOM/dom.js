@@ -12,11 +12,11 @@ const componEnvio = () => {
     
     const nombre = document.querySelector('#nameUser').value;
     const tipoMaterial = document.querySelector('#tipoMaterial').value;
+    //Si no selecciono ningún tamaño me devuelve de cualquier tamaño -> el ? hace que no pete si es NULL
+    //const tipoDimension = document.querySelector('[name=dimensions]:checked')?.value||'de cualquier tamaño';
     const tipoDimension = document.querySelector('[name=dimensions]:checked').value;
     const comentariosAdicionales = document.querySelector('#comentarios').value;
-    
     const texto = nombre +' quiere una caja de '   + tipoMaterial + ' de dimensión ' + tipoDimension + ' y ' + comentariosAdicionales;
-    
     document.querySelector('#envioPreparado').value=texto;
 }
 
