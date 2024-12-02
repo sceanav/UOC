@@ -1,0 +1,88 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.canva {
+	background-color: lightgreen;
+	height: 100vh;
+}
+
+a {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	text-decoration: none;
+	color: black;
+	font-size: larger;
+	font-weight: 300;
+}
+
+.selO {
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+	background-color: orangered;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.selB {
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+	background-color: blueviolet;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.selG {
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.selT {
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.squareBox {
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+}
+
+.orange {
+	background-color: orangered;
+}
+
+.blue {
+	background-color: blueviolet;
+}
+
+.grey {
+	background-color: grey;
+}
+
+.selector {
+	display: flex;
+	background-color: darkgreen;
+}
+
+.totalBoxes {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: lightgreen;
+}
