@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div>
+			<h4>Diseño</h4>
+			<div>
+				<input type="radio" name="design" id="d1" class="noDesign" /><label
+					for="d1"
+					>Lo hace el cliente</label
+				>
+			</div>
+			<div>
+				<input type="radio" name="design" id="d2" class="design" /><label
+					for="d2"
+					>Lo hacemos nosotros</label
+				>
+			</div>
+		</div>
+		<div>
+			<h4>Tienda</h4>
+			<div>
+				<input type="radio" name="purchase" id="p1" class="shop" /><label
+					for="purchase"
+					>Incorpora carrito de compra</label
+				>
+			</div>
+
+			<div>
+				<input type="radio" name="purchase" id="p2" class="noShop" /><label
+					for="purchase"
+					>No incorpora carrito de compra</label
+				>
+			</div>
+		</div>
+
+		<div>
+			<h4>Membership</h4>
+			<div>
+				<input type="radio" name="membership" id="m1" class="member" /><label
+					for="membership"
+					>Admite subscripciones</label
+				>
+			</div>
+			<div>
+				<input type="radio" name="membership" id="m2" class="noMember" /><label
+					for="membership"
+					>No admite subscripciones</label
+				>
+			</div>
+		</div>
+		<div>
+			<button type="button" style="margin-top: 20px">
+				Calcular presupuesto
+			</button>
+		</div>
+		<output></output>
+		<script src="presup.js"></script>
+	</body>
+</html>
