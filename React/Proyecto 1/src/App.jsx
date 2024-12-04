@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useRef } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+	// const hacerCosas = () => alert("hola");
+	// const cositas = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+	// const pintaCositas = (cosa) => <p>{cosa}</p>;
+	const inputRef = useRef();
+	const divRef = useRef();
+  console.log(inputRef);
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+	const hacerOtros = () => {
+		divRef.current.innerHTML = inputRef.current.value;
+	};
+  
+	return (
+		<div>
+			
+			<input type="text" ref={inputRef} />
+			<button onClick={hacerOtros}>Mi Botón</button>
+      <div ref={divRef}></div>
 
-export default App
+      {/*
+      {cositas.map(pintaCositas)}
+			<p>
+				Amor<span>{4 + 6}</span>
+			</p>
+			<hr></hr>
+			<p>Probamos</p>
+			<button onClick={hacerCosas}>Hacer cosas</button> */}
+		</div>
+	);
+};
+
+export default App;
