@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const App = () => {
 	const [myPic, setMyPic] = useState("");
-
+	
 	return (
 		<div>
 			<button onClick={(btn1) => setMyPic("../public/111x111.png")}>
