@@ -19,6 +19,7 @@ const App = () => {
 				onChange={(inputAncho) => setAncho(inputAncho.target.value)}
 			/>
 			<br />
+            <br />
 			<button onClick={(btn1) => setArea(alto * ancho)}>Calcula área</button>
 			<h4>El área es: {area}</h4>
 		</div>
