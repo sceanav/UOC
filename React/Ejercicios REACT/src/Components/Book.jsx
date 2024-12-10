@@ -1,4 +1,4 @@
-const Book = ({ book, autor }) => {
+const ShowBook = ({ book, autor }) => {
 	return (
 		<div>
 			<h1>Título: {book}</h1>
@@ -7,4 +7,4 @@ const Book = ({ book, autor }) => {
 	);
 };
 
-export default Book;
+export default ShowBook;

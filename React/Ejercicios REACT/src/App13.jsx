@@ -1,9 +1,9 @@
 import books from './Data/books.json';
-import Book from './Components/Book';
+import ShowBook from './Components/Book';
 const App = () => {
     return (
         <div>
-           {books.map( b=> <Book book={b.title} autor={b.author}/>)}
+           {books.map( b=> <ShowBook book={b.title} autor={b.author}/>)}
         </div>
     );
 };
