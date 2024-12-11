@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const CompoIn = ({ calcula }) => {
+const Componente1 = ({ calcula }) => {
     const [val1, setVal1] = useState(0);
     const [val2, setVal2] = useState(0);
     
@@ -14,4 +14,4 @@ const CompoIn = ({ calcula }) => {
     )
 }
 
-export default CompoIn;
+export default Componente1;
