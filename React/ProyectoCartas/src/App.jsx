@@ -11,11 +11,10 @@ const App = () => {
 	cartas.map((carta) => {
 		carta.descubierta = false;
 		carta.adivinada = false;
-
 		baraja.push(carta);
 	});
 
-	/* Aleateariamente desordeno la baraja */
+	/* Aleateariamente desordeno la baraja y le aprego un key igual a su posición en el array */
 	let index = 0;
 
 	const barajar = (array) => {

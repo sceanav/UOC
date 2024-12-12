@@ -5,22 +5,24 @@ const PintaBaraja = ({ mazo }) => {
 	const [pareja, setPareja] = useState([]);
 
 	const handleClick = (carta) => {
-		let parejaTratada = pareja;
-		parejaTratada.push(carta);
-		setPareja(parejaTratada);
+		if (!carta.adivinada) {
+			let parejaTratada = pareja;
+			parejaTratada.push(carta);
+			setPareja(parejaTratada);
 
-		alert(parejaTratada.length);
+			alert(parejaTratada.length);
 
-		if (parejaTratada.length === 2) {
-			if (parejaTratada[0].imagen != parejaTratada[1].imagen) {
-				parejaTratada = [];
-				setPareja(parejaTratada);
-			} else {
-				alert("Acertaste, son iguales");
-				mazo[parejaTratada[0].key].adivinada = true;
-				mazo[parejaTratada[1].key].adivinada = true;
-				parejaTratada = [];
-				setPareja(parejaTratada);
+			if (parejaTratada.length === 2) {
+				if (parejaTratada[0].imagen != parejaTratada[1].imagen) {
+					parejaTratada = [];
+					setPareja(parejaTratada);
+				} else {
+					alert("Acertaste, son iguales");
+					mazo[parejaTratada[0].key].adivinada = true;
+					mazo[parejaTratada[1].key].adivinada = true;
+					parejaTratada = [];
+					setPareja(parejaTratada);
+				}
 			}
 		}
 
