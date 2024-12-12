@@ -2,31 +2,48 @@ import { useState } from "react";
 
 const PintaBaraja = ({ mazo }) => {
 	const [obj, setObj] = useState();
-	const parejaDeKeys = [];
+	const [pareja, setPareja] = useState([]);
 
-	const handleClick = (e) => {
-		if (parejaDeKeys.length != 2) {
-			parejaDeKeys.push(e.imagen.key);
-			e.descubierta = !e.descubierta;
-			alert(e.imagen.key);
-		} else {
-			alert("estoy en else");
-			mazo[parejaDeKeys[0]].imagen.descubierta = false;
-			mazo[parejaDeKeys[1]].imagen.descubierta = false;
-			parejaDeKeys.pop();
-			parejaDeKeys.pop();
+	const handleClick = (carta) => {
+		let parejaTratada = pareja;
+		parejaTratada.push(carta);
+		setPareja(parejaTratada);
+
+		alert(parejaTratada.length);
+
+		if (parejaTratada.length === 2) {
+			if (parejaTratada[0].imagen != parejaTratada[1].imagen) {
+				parejaTratada = [];
+				setPareja(parejaTratada);
+			} else {
+				alert("Acertaste, son iguales");
+				mazo[parejaTratada[0].key].adivinada = true;
+				mazo[parejaTratada[1].key].adivinada = true;
+				parejaTratada = [];
+				setPareja(parejaTratada);
+			}
 		}
-		setObj(e);
+
+		carta.descubierta = !carta.descubierta;
+		setObj(carta);
+		setTimeout(() => {
+			carta.descubierta = false;
+			setObj(carta);
+		}, 20);
 	};
 
 	return (
 		<div>
-			{mazo.map((e, index) => (
+			{mazo.map((cadaCarta, index) => (
 				<img
 					key={index}
-					src={e.descubierta || e.adivinada ? e.imagen : e.reverso}
+					src={
+						cadaCarta.descubierta || cadaCarta.adivinada
+							? cadaCarta.imagen
+							: cadaCarta.reverso
+					}
 					onClick={() => {
-						handleClick(e);
+						handleClick(cadaCarta);
 					}}
 				/>
 			))}

@@ -7,19 +7,27 @@ const App = () => {
 	/* Creo la baraja con dos cartas de cada tipo */
 
 	let baraja = [];
-	cartas.map((e) => {
-		e.descubierta = false;
-		e.adivinada = false;
-		baraja.push(e);
+
+	cartas.map((carta) => {
+		carta.descubierta = false;
+		carta.adivinada = false;
+
+		baraja.push(carta);
 	});
 
 	/* Aleateariamente desordeno la baraja */
+	let index = 0;
 
 	const barajar = (array) => {
 		for (let i = array.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1));
 			[array[i], array[j]] = [array[j], array[i]];
 		}
+		array.map((elemento) => {
+			elemento.key = index;
+			index = index + 1;
+		});
+
 		return array;
 	};
 
