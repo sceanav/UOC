@@ -1,6 +1,8 @@
 import React from "react";
+import { useState } from "react";
 import "./App.css";
-import cartas from "./data/cartas2";
+import cartas from "./data/cartas";
+import reverso from "./assets/img/reverso.png";
 import PintaBaraja from "./components/PintaBaraja";
 
 const App = () => {
@@ -9,7 +11,8 @@ const App = () => {
 	let baraja = [];
 	cartas.map((e) => {
 		baraja.push(e);
-});
+		baraja.push(e);
+	});
 
 	/* Aleateariamente desordeno la baraja */
 
@@ -23,7 +26,13 @@ const App = () => {
 
 	baraja = barajar(baraja);
 
-	
+	/*Muestro las cartas * tapadas */
+
+	let barajaMostrada = [];
+
+	for (let i = baraja.length; i > 0; i--) {
+		barajaMostrada.push(reverso);
+	}
 
 	return (
 		<div>
