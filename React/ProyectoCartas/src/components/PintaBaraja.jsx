@@ -5,10 +5,12 @@ const PintaBaraja = ({ mazo }) => {
 	const parejaDeKeys = [];
 
 	const handleClick = (e) => {
-		if (parejaDeKeys.length < 2) {
+		if (parejaDeKeys.length != 2) {
 			parejaDeKeys.push(e.imagen.key);
 			e.descubierta = !e.descubierta;
+			alert(e.imagen.key);
 		} else {
+			alert("estoy en else");
 			mazo[parejaDeKeys[0]].imagen.descubierta = false;
 			mazo[parejaDeKeys[1]].imagen.descubierta = false;
 			parejaDeKeys.pop();

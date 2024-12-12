@@ -8,8 +8,10 @@ const App = () => {
 
 	let baraja = [];
 	cartas.map((e) => {
+		e.descubierta = false;
+		e.adivinada = false;
 		baraja.push(e);
-});
+	});
 
 	/* Aleateariamente desordeno la baraja */
 
@@ -22,8 +24,6 @@ const App = () => {
 	};
 
 	baraja = barajar(baraja);
-
-	
 
 	return (
 		<div>
