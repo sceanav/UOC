@@ -1,0 +1,45 @@
+import React from "react";
+import { useState } from "react";
+import "./App.css";
+import cartas from "./data/cartas";
+import reverso from "./assets/img/reverso.png";
+
+const App = () => {
+	/* Creo la baraja con dos cartas de cada tipo */
+	
+  let baraja = [];
+	cartas.map((e) => {
+		baraja.push(e);
+		baraja.push(e);
+	});
+
+	/* Aleateariamente desordeno la baraja */
+
+	const barajar = (array) => {
+		for (let i = array.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[array[i], array[j]] = [array[j], array[i]];
+		}
+		return array;
+	};
+
+	baraja = barajar(baraja);
+
+  /*Muestro las cartas * tapadas */
+
+	let barajaMostrada = [];
+  
+	for (let i = baraja.length; i > 0; i--) {
+		barajaMostrada.push(reverso);
+	}
+
+	return (
+		<div>
+			{baraja.map((carta) => (
+				<img src={carta}></img>
+			))}
+		</div>
+	)
+};
+
+export default App;
