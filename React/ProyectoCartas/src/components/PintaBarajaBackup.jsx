@@ -28,7 +28,7 @@ const PintaBaraja = ({ mazo }) => {
 		setTimeout(() => {
 			carta.descubierta = false;
 			setObj(carta);
-		}, 5000);
+		}, 20);
 	};
 
 	return (
