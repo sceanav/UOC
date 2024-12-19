@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Questions from "./assets/data/questions";
 import { Container } from "./App/styles";
 import { Row } from "./App/styles";
